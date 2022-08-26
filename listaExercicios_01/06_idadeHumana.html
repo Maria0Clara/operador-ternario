@@ -8,6 +8,12 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    const idade = Number(prompt(`Diga a idade do seu cão`));
+    const porte = prompt(`Diga o porte do seu cão(P|pequeno)(M|médio)(G|grande)`).toUpperCase();
+
+    (porte === `P`) ? alert(`Seu cão teria ${idade * 5}`) 
+    : (porte === `M`) ? alert(`Seu cão teria ${idade * 6}`) 
+    : alert(`Seu cão teria ${idade * 7}`);
 
 
     //Processamento

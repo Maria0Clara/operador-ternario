@@ -8,7 +8,17 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
+    const preco = Number(prompt(`Diga o preço do produto`));
 
+let VintePorcento = preco * 1.2;
+let QuinzePorcento = preco * 1.15;
+let DezPorcento = preco * 1.1;
+let MuitoPorcento = preco * 1.05;
+
+(preco <= 280) ? alert(`de ${preco} reais, foi para ${VintePorcento}`)
+: (preco <= 700) ? alert(`de ${preco}, foi para ${QuinzePorcento}`)
+: (preco <= 1500) ? alert(`de ${preco}, foi para ${DezPorcento}`)
+: alert(`de ${preco}, foi para ${MuitoPorcento}`)
 
     //Processamento
 

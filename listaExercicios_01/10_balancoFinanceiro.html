@@ -11,6 +11,17 @@
 
     //Entrada
 
+    const contaAgua = Number(prompt(`Digite o preço da conta de água`));
+    const contaEnergia = Number(prompt(`Digite o preço da conta de Energia`));
+    const contaTelefone = Number(prompt(`Digite o preço da conta de Telefone`));
+    const contaMercado= Number(prompt(`Digite o preço da conta do Mercado`));
+    const salario = Number(prompt(`Digite o seu salário`));
+
+    const valorContas = contaAgua + contaEnergia + contaTelefone + contaMercado;
+    const valorSobras = salario - valorContas;
+    
+    (valorSobras >= 0) ? alert(`Você recebeu mais do que gastou, soubrou ${valorSobras.toFixed(2)}`)
+    : alert(`Você ganhou mais do que recebeu. Faltaram ${valorSobras.toFixed(2)} `)
 
     //Processamento
 

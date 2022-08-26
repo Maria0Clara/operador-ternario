@@ -10,7 +10,16 @@
 
     //Processamento
 
-    
+    const PrecoLitro = Number(prompt("Diga o preço do combustivel"));
+  const QuantidadeLitros = Number(prompt("Diga quantos litros são ultilizados diariamente"));
+  const TansportePub = Number(prompt("Diga o preço do transporte público"));
+
+    let LitrosSo = PrecoLitro * QuantidadeLitros;
+    let LitrosTransPublic = PrecoLitro * TansportePub ; 
+
+    (TansportePublico > LitrosSo) ? alert(`ir só será mais barato, custando ${LitrosSo * 2} ida e volta.`)
+    : alert(`ir de buzão é mais barato! ${LitrosTransPublic * 2} reais ida e volta `); 
+
     //Saída
 
     
